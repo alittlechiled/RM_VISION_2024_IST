@@ -1,8 +1,5 @@
-cmake_minimum_required(VERSION 3.8)
-project(arms_detector)
-
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
+get_filename_component(PROJECT_DIR ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+project(${PROJECT_DIR})
+if (TARGET ${PROJECT_NAME})
+    return()
 endif()
-
-
