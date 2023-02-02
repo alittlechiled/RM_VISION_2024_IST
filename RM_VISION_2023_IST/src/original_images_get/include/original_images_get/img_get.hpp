@@ -17,16 +17,12 @@ namespace camera_processor
                     float white_blance_b,float white_blance_g,
                     float white_blance_r,float exposure_time,
                     float gain);
-            void open(void);
             cv::Mat image_get(void);
         private:
             std::string img_source;
             std::string img_path;
             std::string video_path;
-            camera_processor::camera_deal;
-            camera_processor::camera_type camera_choose;
-            camera_processor::camera_para camera_setting
-
+            camera_processor::camera_deal camera_massager;
     }
 }
 
