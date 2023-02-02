@@ -11,19 +11,19 @@ namespace rm_vision
 {
     struct stand_light
     {
-        double min_ratio;//最小宽高比
-        double max_ratio;//最大宽高比
-        double max_angle;//最大的灯条角度
+        const double min_ratio = 0.04;//最小宽高比
+        const double max_ratio = 0.7;//最大宽高比
+        const double max_angle = 12;//最大的灯条角度
     };
     
     struct stand_armor
     {
-        double min_light_ratio;
-        double min_small_center_distance;
-        double max_small_center_distance;
-        double min_large_center_distance;
-        double max_large_center_distance;
-        double max_angle;
+        const double min_light_ratio = 20;
+        const double min_small_center_distance = 2.0;
+        const double max_small_center_distance = 2.85;
+        const double min_large_center_distance = 4.0;
+        const double max_large_center_distance = 4.3;
+        const double max_angle = 10;
     };
     
     struct Light:public cv::RotatedRect
@@ -61,13 +61,13 @@ namespace rm_vision
             left_light = l2, right_light = l1;
             }//按x坐标的大小来判断是左装甲板还是右装甲板
             this->center = (left_light.center + right_light.center) / 2;
+
         }
 
         Light left_light, right_light;//左右灯条
         cv::Point2f center;//装甲板中心坐标
 
         cv::Mat number_img;//装甲板部分图片
-
         char number;//装甲板数字分类出来的结果
         // std::string number;
         float similarity;//相似度

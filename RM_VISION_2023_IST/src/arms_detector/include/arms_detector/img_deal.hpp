@@ -20,7 +20,7 @@ namespace rm_vision
       rm_vision::number_classifier classer;      
     public:
       img_processor()=default;
-      img_processor(std::string _file_path);
+      img_processor(std::string &model_path,std::string &label_path,double &thr,bool &color,unsigned int &lightness);
 
       std::vector<rm_vision::Armor> img_deal(const cv::Mat &img);
     };

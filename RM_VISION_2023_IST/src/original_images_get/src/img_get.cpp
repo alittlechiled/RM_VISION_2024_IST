@@ -18,7 +18,7 @@ namespace camera_processor
             para.white_balance_value = {white_blance_b,white_blance_g,white_blance_r};
 
             type = camera_choose;  
-            camera_massager(para,type);
+            camera_massager = camera_deal(para,type);
         }
         else if (this->img_source == "picture")
             this->img_path = img_path;

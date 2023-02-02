@@ -2,12 +2,15 @@
 
 namespace rm_vision
 {
-    armor_detect::armor_detect(stand_light m_l,stand_armor m_a,bool color,unsigned int lightness)
+    armor_detect::armor_detect(bool color,unsigned int lightness):color_detect(color),  min_lightness(lightness)
+    {}
+
+    armor_detect armor_detect::operator=(armor_detect a_d)
     {
-        
-
-
+        this->color_detect=a_d.color_detect;
+        this->min_lightness= a_d.min_lightness;
     }
+
     cv::Mat armor_detect::preprocessImage(const cv::Mat & rgb_img)
     {
         cv::Mat gray_img;

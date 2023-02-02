@@ -2,11 +2,10 @@
 
 namespace rm_vision
 {
-    img_processor::img_processor(std::string _file_path)
+    img_processor::img_processor(std::string &model_path,std::string &label_path,double &thr,bool &color,unsigned int &lightness)
     {
-        
-
-
+        this->armor_detector = rm_vision::armor_detect(color,lightness);
+        this->classer = rm_vision::number_classifier(model_path,label_path,thr);
     }
 
     std::vector<rm_vision::Armor> img_processor::img_deal(const cv::Mat &img)

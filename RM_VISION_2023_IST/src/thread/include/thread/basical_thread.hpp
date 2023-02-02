@@ -24,7 +24,7 @@
   }                            \
   ;
 
-namespace rm_work_thread
+namespace rm_thread
 {
     
 

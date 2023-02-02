@@ -4,7 +4,7 @@
 
 #include "basicthread.hpp"
 
-namespace rm_threading
+namespace rm_thread
 {
     template <typename DataType>
     class entitythread

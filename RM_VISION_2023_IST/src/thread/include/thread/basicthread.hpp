@@ -7,7 +7,7 @@
 #include <thread>
 
 
-namespace rm_threading
+namespace rm_thread
 {
 const int MAX_THREADS = 8;
 template <typename DataType>

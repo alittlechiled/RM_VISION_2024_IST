@@ -8,20 +8,20 @@ path = ""
 path = ""
 
 [camera]
-manufacturer = "dahua"
+camera_choose = false
 exposure_time = 4000.0
 gain = 1.0
-white_balance_red = 1.6
 white_balance_blue = 1.7
+white_balance_green = 1.0
+white_balance_red = 1.6
 
 [arm_detect]
-color = "bule"
-
+color = ture
+thread_img = 125
 
 [model]
-path = "/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/fc.onnx"
-
-[label]
+model_path = "/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/fc.onnx"
 label_path = "/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/label.txt"
+thread_confence = 90.0
 
-#/home/shunxiaochuan/2022-REDO/2022-REDO/configuration_file/setting.toml
+#/home/shunxiaochuan/2022-REDO/2022-REDO/configuration_file/setting.tomlex_time
