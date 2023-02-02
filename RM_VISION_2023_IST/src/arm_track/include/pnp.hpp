@@ -4,9 +4,10 @@
 #include <opencv2/opencv.hpp>
 
 #include "arm_and_light.hpp"
-#include <iostream>
+
 #include <vector>
 #include <array>
+#include <utility>
 
 namespace rm_vision
 {

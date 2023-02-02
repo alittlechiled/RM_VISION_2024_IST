@@ -1,0 +1,27 @@
+[capture]
+target = "camera"
+
+[video]
+path = ""
+
+[image]
+path = ""
+
+[camera]
+manufacturer = "dahua"
+exposure_time = 4000.0
+gain = 1.0
+white_balance_red = 1.6
+white_balance_blue = 1.7
+
+[arm_detect]
+color = "bule"
+
+
+[model]
+path = "/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/fc.onnx"
+
+[label]
+label_path = "/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/label.txt"
+
+#/home/shunxiaochuan/2022-REDO/2022-REDO/configuration_file/setting.toml

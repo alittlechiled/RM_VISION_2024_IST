@@ -1,7 +1,13 @@
-#include "include/arms_detect.hpp"
+#include "arms_detect.hpp"
 
 namespace rm_vision
 {
+    armor_detect::armor_detect(stand_light m_l,stand_armor m_a,bool color,unsigned int lightness)
+    {
+        
+
+
+    }
     cv::Mat armor_detect::preprocessImage(const cv::Mat & rgb_img)
     {
         cv::Mat gray_img;

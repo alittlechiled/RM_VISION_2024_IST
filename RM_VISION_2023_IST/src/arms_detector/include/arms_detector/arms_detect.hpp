@@ -11,6 +11,7 @@ namespace rm_vision
     class armor_detect
     {
         public:
+            armor_detect()=default;
             armor_detect(stand_light m_l,stand_armor m_a,bool color,unsigned int lightness);
             cv::Mat preprocessImage(const cv::Mat & rgb_img);
             std::vector<rm_vision::Light> find_lights(const cv::Mat &bin_img,const cv::Mat &rgb_img);
