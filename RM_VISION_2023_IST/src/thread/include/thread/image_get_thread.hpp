@@ -16,6 +16,7 @@ namespace rm_thread
     private:
       camera_processor::img_get img_getter;
     public:
+    img_get_thread()=default;
     img_get_thread(const rm_conf_read::conf_read &conf);
     DECL_WORKTHTREAD_END()
 }

@@ -12,11 +12,11 @@ namespace camera_processor
     {
         public:
             img_get()=default;
-            img_get(std::string img_source,bool camera_type,
+            img_get(std::string img_source,bool camera_choose,
                     std::string img_path,std::string video_path,
-                    float white_blance_b,float white_blance_g,
-                    float white_blance_r,float exposure_time,
-                    float gain);
+                    double white_blance_b,double white_blance_g,
+                    double white_blance_r,double exposure_time,
+                    double gain);
             cv::Mat image_get(void);
         private:
             std::string img_source;

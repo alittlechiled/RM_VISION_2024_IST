@@ -15,9 +15,10 @@ namespace camera_processor
             camera_processor::camera_type type;
             para.exposure_time_value = exposure_time;
             para.gain_value = gain;
-            para.white_balance_value = {white_blance_b,white_blance_g,white_blance_r};
-
-            type = camera_choose;  
+            para.white_balance_value[0] = white_blance_b;
+            para.white_balance_value[1] = white_blance_g;
+            para.white_balance_value[2] = white_blance_r;
+            type = camera_processor::camera_type(int(camera_choose));  
             camera_massager = camera_deal(para,type);
         }
         else if (this->img_source == "picture")
@@ -28,9 +29,20 @@ namespace camera_processor
 
     cv::Mat img_get::image_get(void)
     {
-        
+        cv::Mat img;
+        if (img_source == "picture")
+        {
+            img = cv::imread(img_path);
+        }
+        else if(img_source == "video")
+        {
 
-
+        }
+        else if(img_source == "camera")
+        {
+            img = camera_massager.picture_get();
+        }
+        return img;
 
     }
 }

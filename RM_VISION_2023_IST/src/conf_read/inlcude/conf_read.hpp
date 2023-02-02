@@ -26,15 +26,15 @@ namespace rm_conf_read
             bool camera_choose;
             std::string video_path;
             std::string image_path;
-          };
+          } camera_setting;
           struct detect_setting
           {
             std::string model_path;
             std::string label_path;
-            unsigned int thread_img;
             double thread_confence;
             bool color;
-          };
+            unsigned int thread_img;
+          } detect_setting;
         private:
           class Impl;
           std::unique_ptr<Impl> pimpl;
