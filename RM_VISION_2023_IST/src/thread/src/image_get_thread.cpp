@@ -25,10 +25,5 @@ namespace rm_thread
             img = img_getter.image_get();
             rm_thread::entitythread<cv::Mat>::set("capture_image", img);
         }
-
-
     }
-
-
-
 } // namespace rm_thread

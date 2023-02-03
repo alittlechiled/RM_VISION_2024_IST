@@ -5,10 +5,10 @@ namespace rm_vision
     number_classifier::number_classifier(const std::string &model_path,const std::string &label_path,const double &thr): threshold(thr)
     {
         net = cv::dnn::readNetFromONNX(model_path);
-        std::ifstream labels(label_path);
+        std::ifstream labels(label_path,std::ifstream::in);
         std::string label;
         while (std::getline(labels, label)) {
-        this->shapes.push_back(label[0]);}
+        this->shapes.push_back(label);}
 
     }
 

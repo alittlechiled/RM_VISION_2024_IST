@@ -23,7 +23,7 @@ namespace camera_processor
             std::string img_path;
             std::string video_path;
             camera_processor::camera_deal camera_massager;
-    }
+    };
 }
 
 

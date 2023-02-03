@@ -6,6 +6,7 @@
 #include <string>
 #include <iostream>
 #include <cstddef>
+#include <fstream>
 
 #include "arm_and_light.hpp"
 #include "arms_detect.hpp"

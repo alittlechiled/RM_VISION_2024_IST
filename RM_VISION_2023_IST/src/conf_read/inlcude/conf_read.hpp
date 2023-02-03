@@ -38,9 +38,7 @@ namespace rm_conf_read
         private:
           class Impl;
           std::unique_ptr<Impl> pimpl;
-
-
-    }   
+    };
 }
 
 #endif

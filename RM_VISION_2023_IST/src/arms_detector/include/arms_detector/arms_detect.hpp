@@ -11,6 +11,7 @@ namespace rm_vision
     class armor_detect
     {
         public:
+            armor_detect()=default;
             armor_detect(bool color,unsigned int lightness);
             armor_detect operator=(armor_detect a_d);
             cv::Mat preprocessImage(const cv::Mat & rgb_img);

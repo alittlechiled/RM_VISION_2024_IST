@@ -23,6 +23,7 @@ namespace camera_processor
     class camera_deal:public DahuaCamera, public DahengCamera
     {
         public:
+            camera_deal()=default;
             camera_deal(camera_para camera_para_init,camera_type camera_choose):camera_setting(camera_para_init),camera_choose(camera_choose)
             {
                 this->para_setting();
