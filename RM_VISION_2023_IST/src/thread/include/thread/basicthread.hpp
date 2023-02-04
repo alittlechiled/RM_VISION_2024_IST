@@ -47,7 +47,7 @@ class basicthread
         template <typename T = DataType>
         void set(T&& data)
         {
-            std::cout << std::this_thread::get_id() <<" "<<data << std::endl;
+            std::cout << std::this_thread::get_id()<< std::endl;
             *ptr_input_ = std::forward<T>(data);
             std::unique_lock<std::shared_mutex> xlck(mu_read_);  // �������������̲߳��ɶ�д
             std::swap(ptr_output_, ptr_input_);

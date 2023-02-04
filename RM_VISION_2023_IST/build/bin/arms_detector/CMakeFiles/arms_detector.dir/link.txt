@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarms_detector.a CMakeFiles/arms_detector.dir/src/img_deal.cpp.o CMakeFiles/arms_detector.dir/src/arms_detect.cpp.o CMakeFiles/arms_detector.dir/src/classifier_shape_of_armor.cpp.o
+/usr/bin/ranlib libarms_detector.a

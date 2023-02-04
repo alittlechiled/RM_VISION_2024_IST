@@ -8,7 +8,6 @@
 
 #include <vector>
 #include <string>
-#include <toml.hpp>
 
 
 namespace rm_vision
@@ -19,7 +18,6 @@ namespace rm_vision
       rm_vision::armor_detect armor_detector;
       rm_vision::number_classifier classer;      
     public:
-      img_processor()=default;
       img_processor(const std::string &model_path = "",const std::string &label_path = "",
                     const double &thr = 90.0,const bool &color = true,
                     const unsigned int &lightness =125);

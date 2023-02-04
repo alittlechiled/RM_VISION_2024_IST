@@ -23,7 +23,7 @@ void debug_imshow(const std::string name, const cv::Mat &img)
 int main(int ,char **)
 {
     conf_read conf;
-    conf.read("/home/shunxiaochuan/2022-REDO/2022-REDO/configuration_file/setting.tomlex_time");
+    conf.read("\\home\\shunxiaochuan\\RM_VISION_2023_IST\\RM_VISION_2023_IST\\configuration_file\\setting.toml");
     std::cout<<"read configuration_file"<<std::endl;
     rm_thread::img_get_thread capture{conf};
     capture.up();

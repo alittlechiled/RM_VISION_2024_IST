@@ -1,0 +1,2 @@
+/usr/bin/ar qc libarm_light.a CMakeFiles/arm_light.dir/src/arm_and_light.cpp.o
+/usr/bin/ranlib libarm_light.a

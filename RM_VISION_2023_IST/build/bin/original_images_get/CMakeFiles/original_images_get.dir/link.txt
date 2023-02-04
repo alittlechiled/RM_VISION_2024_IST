@@ -1,0 +1,2 @@
+/usr/bin/ar qc liboriginal_images_get.a CMakeFiles/original_images_get.dir/src/camera_deal.cpp.o CMakeFiles/original_images_get.dir/src/daheng_camera.cpp.o CMakeFiles/original_images_get.dir/src/dahua.cpp.o CMakeFiles/original_images_get.dir/src/img_get.cpp.o
+/usr/bin/ranlib liboriginal_images_get.a

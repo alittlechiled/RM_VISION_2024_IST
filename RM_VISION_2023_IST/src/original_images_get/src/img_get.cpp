@@ -19,7 +19,7 @@ namespace camera_processor
             para.white_balance_value[1] = white_blance_g;
             para.white_balance_value[2] = white_blance_r;
             type = camera_processor::camera_type(int(camera_choose));  
-            camera_massager = camera_deal(para,type);
+            this->camera_massager = camera_deal(para,type);
         }
         else if (this->img_source == "picture")
             this->img_path = img_path;

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libthread.a CMakeFiles/thread.dir/src/detect_thread.cpp.o CMakeFiles/thread.dir/src/image_get_thread.cpp.o
+/usr/bin/ranlib libthread.a

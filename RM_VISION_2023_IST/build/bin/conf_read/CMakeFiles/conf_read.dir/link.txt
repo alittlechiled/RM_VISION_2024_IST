@@ -1,0 +1,2 @@
+/usr/bin/ar qc libconf_read.a CMakeFiles/conf_read.dir/src/conf_read.cpp.o
+/usr/bin/ranlib libconf_read.a
