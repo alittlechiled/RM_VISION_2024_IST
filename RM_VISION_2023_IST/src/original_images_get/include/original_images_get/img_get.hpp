@@ -12,7 +12,7 @@ namespace camera_processor
     {
         public:
             img_get()=default;
-            img_get(std::string img_source,bool camera_choose,
+            img_get(std::string img_source,std::string camera_choose,
                     std::string img_path,std::string video_path,
                     double white_blance_b,double white_blance_g,
                     double white_blance_r,double exposure_time,

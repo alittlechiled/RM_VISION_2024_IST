@@ -4,6 +4,8 @@ namespace rm_thread
 {
     detect_thread::detect_thread(const rm_conf_read::conf_read &conf)
     {
+        std::cout<<"[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]"<<std::endl;
+        std::cout<<"the conf.detect_setting.model_path is"<<conf.detect_setting.model_path<<std::endl;
         this->armdetecter = rm_vision::img_processor(
         conf.detect_setting.model_path,
         conf.detect_setting.label_path,
@@ -21,8 +23,5 @@ namespace rm_thread
             rm_thread::entitythread<std::vector<rm_vision::Armor>>::set("detect_result",std::move(res));
         }
     }
-
-
-
 
 } // namespace rm_thread

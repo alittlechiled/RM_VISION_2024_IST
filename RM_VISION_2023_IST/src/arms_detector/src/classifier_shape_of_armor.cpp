@@ -4,12 +4,13 @@ namespace rm_vision
 {
     number_classifier::number_classifier(const std::string &model_path,const std::string &label_path,const double &thr): threshold(thr)
     {
-        net = cv::dnn::readNetFromONNX(model_path);
+        std::cout<<"ready to read mode from"<<model_path<<std::endl;
         std::ifstream labels(label_path,std::ifstream::in);
         std::string label;
         while (std::getline(labels, label)) {
         this->shapes.push_back(label);}
-
+        std::cout<<"labai are readed"<<std::endl;
+        net = cv::dnn::readNetFromONNX(model_path);
     }
 
     void number_classifier::do_class(std::vector<Armor> arms)

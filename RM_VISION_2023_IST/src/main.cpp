@@ -1,5 +1,6 @@
  #include "detect_thread.hpp"
 #include "image_get_thread.hpp"
+#include "conf_read.hpp"
 #include <opencv2/opencv.hpp>
 
 using namespace rm_capture;
@@ -23,12 +24,13 @@ void debug_imshow(const std::string name, const cv::Mat &img)
 int main(int ,char **)
 {
     conf_read conf;
-    conf.read("\\home\\shunxiaochuan\\RM_VISION_2023_IST\\RM_VISION_2023_IST\\configuration_file\\setting.toml");
+    conf.read("/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/configuration_file/setting.toml");
     std::cout<<"read configuration_file"<<std::endl;
     rm_thread::img_get_thread capture{conf};
     capture.up();
     std::cout<<"open camera"<<std::endl;
-    rm_thread::detect_thread detect{conf};
+    std::cout<<"+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"<<conf.detect_setting.model_path<<std::endl;
+    rm_thread::detect_thread detect=rm_thread::detect_thread(conf);
     detect.up();
     std::cout<<"open detect"<<std::endl;
   while (true)

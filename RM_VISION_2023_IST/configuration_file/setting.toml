@@ -8,7 +8,7 @@ path = ""
 path = ""
 
 [camera]
-camera_choose = false
+camera_choose = "dahua"
 exposure_time = 4000.0
 gain = 1.0
 white_balance_blue = 1.7
@@ -16,7 +16,7 @@ white_balance_green = 1.0
 white_balance_red = 1.6
 
 [arm_detect]
-color = ture
+color = true
 thread_img = 125
 
 [model]

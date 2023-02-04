@@ -8,6 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 find_package(OpenCV 4 REQUIRED)
 include_directories(SYSTEM ${OpenCV_INCLUDE_DIRS})
+message(${OpenCV_INCLUDE_DIRS})
 link_libraries(${OpenCV_LIBS})
 
 add_executable(rm_vision main.cpp)

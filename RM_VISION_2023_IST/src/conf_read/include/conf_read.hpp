@@ -38,7 +38,7 @@ namespace rm_conf_read
             double w_b_b;
             double w_b_g;
             double w_b_r;
-            bool camera_choose;
+            std::string camera_choose;
             std::string video_path;
             std::string image_path;
           } camera_setting;

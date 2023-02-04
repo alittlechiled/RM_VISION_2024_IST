@@ -71,7 +71,7 @@ namespace rm_conf_read
           READ_CONFIG(camera_setting.camera_or_img,std::string,"camera");
           READ_CONFIG(camera_setting.video_path,std::string,"");
           READ_CONFIG(camera_setting.image_path,std::string,"");
-          READ_CONFIG(camera_setting.camera_choose,toml::boolean,false);
+          READ_CONFIG(camera_setting.camera_choose,std::string,"dahua");
           READ_CONFIG(camera_setting.ex_time,toml::floating,4000.0);
           READ_CONFIG(camera_setting.gain,toml::floating,1.0);
           READ_CONFIG(camera_setting.w_b_b,toml::floating,1.0);
@@ -84,8 +84,8 @@ namespace rm_conf_read
           READ_CONFIG(detect_setting.model_path,std::string,"/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/fc.onnx");
           READ_CONFIG(detect_setting.label_path,std::string,"/home/shunxiaochuan/RM_VISION_2023_IST/RM_VISION_2023_IST/src/arms_detector/model/label.txt");
           READ_CONFIG(detect_setting.thread_confence,toml::floating,4000.0);
-
-
+          std::cout<<detect_setting.model_path<<std::endl;
+          std::cout<<detect_setting.label_path<<std::endl;
           
 
           std::cout<<"------------------------------------------------------------"<<std::endl;

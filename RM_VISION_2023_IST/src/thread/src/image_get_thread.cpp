@@ -4,7 +4,8 @@ namespace rm_thread
 {
     img_get_thread::img_get_thread(const rm_conf_read::conf_read &conf)
     {
-        img_getter = camera_processor::img_get(
+            std::cout<<"\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"<<conf.camera_setting.camera_choose<<std::endl;
+            img_getter = camera_processor::img_get(
             conf.camera_setting.camera_or_img,
             conf.camera_setting.camera_choose,
             conf.camera_setting.image_path,

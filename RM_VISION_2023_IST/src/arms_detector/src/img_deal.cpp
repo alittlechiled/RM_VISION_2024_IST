@@ -6,7 +6,9 @@ namespace rm_vision
                                 const double &thr,const bool &color,
                                 const unsigned int &lightness)
     {
+        std::cout<<"load the init label from"<<label_path<<std::endl;
         this->armor_detector = rm_vision::armor_detect(color,lightness);
+        std::cout<<"load the init model from"<<model_path<<std::endl;
         this->classer = rm_vision::number_classifier(model_path,label_path,thr);
     }
 
@@ -24,9 +26,4 @@ namespace rm_vision
 
         return armors;
     }
-
-    
-
-
-
 } // namespace rm_vision

@@ -5,7 +5,7 @@ namespace rm_vision
     armor_detect::armor_detect(bool color,unsigned int lightness):color_detect(color),  min_lightness(lightness)
     {}
 
-    armor_detect armor_detect::operator=(armor_detect a_d)
+    void armor_detect::operator=(armor_detect a_d)
     {
         this->color_detect=a_d.color_detect;
         this->min_lightness= a_d.min_lightness;
